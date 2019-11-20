@@ -48,7 +48,7 @@ class BindAssocParamsConnectionDecorator extends BaseConnectionDecorator {
      * @return array A tuple of two elements, the first the eventually rewritten query, the second an array with the parameters to bind.
      */
     protected function notAssocParamsAndQuery($sql, $params = array()) {
-        if (empty($params) || !isAssoc($params)) {
+        if (empty($params) || !$this->isAssoc($params)) {
             return [$sql, $params];
         }
         
