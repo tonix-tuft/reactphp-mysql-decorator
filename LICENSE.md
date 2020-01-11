@@ -1,4 +1,4 @@
-Copyright (c) 2019 Anton Bagdatyev
+Copyright (c) 2020 Anton Bagdatyev
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
