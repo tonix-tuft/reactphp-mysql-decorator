@@ -1,25 +1,29 @@
 {
-    "name": "tonix-tuft/reactphp-mysql-decorator",
-    "description": "A decorator of the ReactPHP MySQL connection interface which augments its behaviour, e.g. providing binding of associative parameters.",
-    "keywords": ["php", "reactphp", "mysql"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Anton Bagdatyev (Tonix-Tuft)",
-            "email": "antonytuft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
-        "php": "^7.0",
-        "react/mysql": "^0.5.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "ReactPHP\\MySQL\\Decorator\\": "src/"
-        }
+  "name": "tonix-tuft/reactphp-mysql-decorator",
+  "description": "A decorator of the ReactPHP MySQL connection interface which augments its behaviour, e.g. providing binding of associative parameters.",
+  "keywords": [
+    "php",
+    "reactphp",
+    "mysql"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anton Bagdatyev (Tonix)",
+      "email": "antonytuft@gmail.com"
     }
+  ],
+  "type": "library",
+  "require": {
+    "php": "^7.0",
+    "react/mysql": "^0.5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "ReactPHP\\MySQL\\Decorator\\": "src/"
+    }
+  }
 }

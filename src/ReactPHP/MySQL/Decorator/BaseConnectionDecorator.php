@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2020 Anton Bagdatyev (Tonix-Tuft)
+ * Copyright (c) 2020 Anton Bagdatyev (Tonix)
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -33,7 +33,7 @@ use React\MySQL\ConnectionInterface;
  * A base abstract decorator to extend in order to add behaviour to a MySQL connection interface
  * of the `react/mysql` library.
  *
- * @author Anton Bagdatyev (Tonix-Tuft) <antonytuft@gmail.com>
+ * @author Anton Bagdatyev (Tonix) <antonytuft@gmail.com>
  */
 abstract class BaseConnectionDecorator implements ConnectionInterface {
     
