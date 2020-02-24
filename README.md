@@ -49,7 +49,7 @@ $connectionWithBindAssocParams->query('SELECT * FROM table WHERE field = :value'
 
 ## Authors
 
-**Tonix-Tuft**
+**Tonix**
 
 ## License
 
