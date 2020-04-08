@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ReactPHP\\MySQL\\Decorator\\": "src/"
+      "ReactPHP\\MySQL\\Decorator\\": "src/ReactPHP/MySQL/Decorator/"
     }
   }
 }
