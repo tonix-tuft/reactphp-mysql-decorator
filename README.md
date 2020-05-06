@@ -7,7 +7,7 @@ A decorator of the [ReactPHP MySQL](https://github.com/friends-of-reactphp/mysql
 Using [Composer](https://getcomposer.org/):
 
 ```
-$ composer require tonix-tuft/reactphp-mysql-decorator
+composer require tonix-tuft/reactphp-mysql-decorator
 ```
 
 ## Usage
@@ -18,14 +18,16 @@ Currently, the only available decorator is `BindAssocParamsConnectionDecorator`,
 
 This decorator allows the binding of associative parameters in queries (named parameters). To use it just wrap a `React\MySQL\ConnectionInterface`:
 
-```
+```php
 <?php
 
 // ...
+use React\EventLoop\Factory as LoopFactory;
+use React\MySQL\Factory;
 use ReactPHP\MySQL\Decorator\BindAssocParamsConnectionDecorator;
 
 // ...
-$loop = React\EventLoop\Factory::create();
+$loop = LoopFactory::create();
 $factory = new Factory($loop);
 
 $uri = 'username:password@localhost/dbname';
@@ -45,12 +47,8 @@ $connectionWithBindAssocParams->query('SELECT * FROM table WHERE field = :value'
 
 ## Acknowledgements
 
-[friends-of-reactphp/mysql](https://github.com/friends-of-reactphp/mysql) - Async MySQL database client for ReactPHP
-
-## Authors
-
-**Tonix**
+[friends-of-reactphp/mysql](https://github.com/friends-of-reactphp/mysql) - Async MySQL database client for ReactPHP.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+MIT © [Anton Bagdatyev (Tonix)](https://github.com/tonix-tuft)
